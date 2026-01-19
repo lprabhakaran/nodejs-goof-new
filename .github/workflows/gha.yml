@@ -1,4 +1,4 @@
-name: snyk-sca-publish-scan 
+name: snyk-sca-publish-scan
 
 on:
   push:
@@ -29,5 +29,4 @@ jobs:
         with:
           org-id: ${{ vars.SNYK_ORG_ID }}
           snyk-token: ${{ secrets.SNYK_TOKEN}}
-          build-directory: dir
           cli-params: --all-projects
